@@ -37,12 +37,15 @@ body {
 
 #site-main {
     width: 1200px;
+    margin: auto;
+    text-align: center;
 }
 
 /* #site-main */
 
 .container.product {
     display: inline-block;
+    margin-left: 0.5rem;
 }
 
 .image.product, .image.hover, .container.image.relative {
@@ -81,6 +84,10 @@ body {
     position: absolute;
     left: 0;
     bottom: 0.75rem;
+}
+
+.brand, .name, .price {
+    text-align: left;
 }
 
 .price {
