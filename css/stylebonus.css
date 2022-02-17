@@ -39,36 +39,8 @@ body {
     width: 1200px;
     margin: auto;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-/* .banner */
-
-/* .banner {
-    position: fixed;
-    z-index: 1;
-    background-color: var(--bgcolor-like);
-    width: 100%;
-}
-
-.container.logo {
-    height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-}
-
-.image.logo {
-    width: 100px;
-    height: 100px;
-}
-
-.text.logo {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 2rem;  
-}
- */
 /* #site-main */
 
 .container.product {
@@ -124,7 +96,6 @@ body {
 
 .old-price {
     color: var(--color-text);
-    text-decoration: line-through;
 }
 
 .container.product:hover .image.product {
