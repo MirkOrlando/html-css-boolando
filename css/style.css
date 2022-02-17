@@ -1,10 +1,100 @@
 /* 
 bg-discount: #EB0037;
-bg-sostenibility: #00875A;
-color-discounted-price: #FF0000; 
+bg-sustainability: #00875A;
+color-price: #FF0000; 
 */
+
+/* utility */
+
+:root {
+    --color-text: black;
+    --bgcolor-discount: #EB0037;
+    --bgcolor-sustainability: #00875A;
+    --color-badge: white;
+    --bgcolor-like: white;
+    --color-price: #FF0000;
+}
+
+.relative {
+    position: relative;
+}
+
+.hover{
+    display: none;
+}
 
 /* common */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:var(--color-text);
+}
+
+#site-main {
+    width: 1200px;
+}
+
 /* #site-main */
 
+.container.product {
+    display: inline-block;
+}
+
+.image.product, .image.hover, .container.image.relative {
+    width: 320px;
+    height: 462px;
+}
+
+.badge.discount, .badge.sustainability  {
+    display: inline-block;
+    color: var(--color-badge);
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+.badge.discount {
+    background-color: var(--bgcolor-discount);
+}
+
+.badge.sustainability {
+    background-color: var(--bgcolor-sustainability);
+}
+
+.like {
+    background-color: var(--bgcolor-like);
+    padding: 0.25rem;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 0.75rem;
+    right: 0;
+    height: 2.25rem;
+    width: 2.25rem;
+    text-align: center;
+}
+
+.container.badge {
+    position: absolute;
+    left: 0;
+    bottom: 0.75rem;
+}
+
+.price {
+    color: var(--color-price);
+}
+
+.old-price {
+    color: var(--color-text);
+}
+
+.container.product:hover .image.product {
+    display: none;
+}
+
+.container.product:hover .image.hover{
+    display: inline-block;
+}
