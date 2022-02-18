@@ -50,9 +50,19 @@ body {
     margin-left: 0.5rem;
 }
 
-.image.product, .image.hover, .container.image.relative {
+/* .image.product, .image.hover, .container.image.relative {
     width: 320px;
     height: 462px;
+}  
+è preferibile definire solo una dimensione e poi far proporzionare
+l'immagine in automatico di conseguenza*/
+
+.container.image.relative {
+    width: 320px;
+}
+
+.image.product, .image.hover {
+    max-width: 100%;
 }
 
 .badge.discount, .badge.sustainability  {

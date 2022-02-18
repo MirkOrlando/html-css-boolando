@@ -20,7 +20,7 @@ color-price: #FF0000;
     position: relative;
 }
 
-.hover{
+.hover {
     display: none;
 }
 
@@ -82,7 +82,12 @@ body {
 
 .container.product {
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+    margin-top: 1.25rem;
+}
+
+.container.image.relative {
+    margin-bottom: 1rem;
 }
 
 .image.product, .image.hover, .container.image.relative {
@@ -142,10 +147,6 @@ body {
 
 .container.product:hover .image.hover{
     display: inline-block;
-}
-
-.container.image.relative:hover .image.hover{
-    box-shadow: 1px 1px 10px 8px #12111191;
 }
 
 /* #site-footer */
